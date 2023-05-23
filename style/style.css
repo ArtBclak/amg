@@ -202,17 +202,21 @@ template {
 }
 
 .setion__one {
+  position: relative;
   height: calc(100vh - 3rem);
-  background-image: url("../img/bg1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bg1.jpg") center no-repeat;
   background-size: cover;
+}
+
+.container__one {
+  flex-direction: column;
 }
 
 html {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 62.5%;
   background-color: rgb(1, 0, 19);
+  color: aliceblue;
 }
 
 body {
@@ -235,6 +239,7 @@ section {
 .container {
   display: flex;
   width: 98%;
+  height: 100%;
 }
 
 @media screen and (min-width: 1200px) {
