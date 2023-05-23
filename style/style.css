@@ -217,7 +217,7 @@ template {
 .h2__one {
   font-size: 1.8rem;
   font-weight: 300;
-  color: rgb(255, 123, 0);
+  color: rgb(255, 81, 0);
   margin: 0;
 }
 
@@ -233,6 +233,35 @@ template {
   font-size: 1.4rem;
   font-weight: 400;
   max-width: 45rem;
+}
+
+.a__one {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgb(255, 81, 0);
+  background-color: rgb(255, 81, 0);
+  color: aliceblue;
+  transition: 0.1s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.a__one:active {
+  height: 3.6rem;
+  width: 19.6rem;
+  margin: 0.2rem;
+  font-size: 1.75rem;
+}
+.a__one:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 81, 0);
 }
 
 html {
