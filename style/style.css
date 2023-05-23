@@ -181,18 +181,32 @@ template {
 
 .donat {
   width: 100vw;
-  height: 4rem;
+  height: 3rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #020011;
+  transition: 0.2s;
 }
 .donat img {
-  height: 2.5rem;
-  width: 3.5rem;
+  width: 3rem;
+}
+.donat:hover {
+  background-color: #040038;
+}
+
+.setion__one {
+  height: calc(100vh - 3rem);
+  background-image: url("../img/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 html {
@@ -211,6 +225,7 @@ body {
 }
 
 section {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,12 +235,14 @@ section {
 .container {
   display: flex;
   width: 98%;
-  height: 200vh;
 }
 
 @media screen and (min-width: 1200px) {
   html {
     font-size: 60%;
+  }
+  .container {
+    width: 90%;
   }
   ::-webkit-scrollbar {
     width: 1rem;
@@ -243,6 +260,9 @@ section {
 @media screen and (min-width: 1500px) {
   html {
     font-size: 65%;
+  }
+  .container {
+    width: 80%;
   }
 }
 @media screen and (min-width: 2000px) {
