@@ -204,11 +204,11 @@ template {
 .setion__one {
   position: relative;
   min-height: calc(100vh - 3rem);
+  justify-content: center;
   background: linear-gradient(to top, rgb(0, 15, 37), rgba(0, 24, 236, 0.3)), url("../img/bg1.jpg");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 110% 100%;
-  justify-content: center;
+  background-size: 170% 100%;
   animation: bg 60s infinite linear;
 }
 
@@ -282,9 +282,24 @@ template {
   color: rgb(255, 81, 0);
 }
 
+.next__one {
+  background: none;
+  border: none;
+  color: aliceblue;
+}
+
+@media screen and (min-width: 500px) {
+  .setion__one {
+    background-size: 150% 100%;
+    animation: bg 50s infinite linear;
+  }
+}
 @media screen and (min-width: 760px) {
   .h1__one {
     font-size: 6rem;
+  }
+  .setion__one {
+    background-size: 110% 100%;
   }
 }
 .container__two {
