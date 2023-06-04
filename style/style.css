@@ -824,6 +824,7 @@ h2 {
     display: none;
   }
   .nav__header {
+    height: 5rem;
     position: static;
     flex-direction: row;
     background: none;
