@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -453,6 +454,7 @@ template {
 }
 
 .team {
+  margin: 3rem 0;
   padding: 3rem 0;
 }
 
@@ -494,7 +496,7 @@ template {
 }
 .a__team:hover {
   transform: translate(-0.2rem, -0.2rem);
-  box-shadow: 0.3rem 0.3rem 0.5rem rgba(255, 255, 255, 0.5);
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(255, 255, 255, 0.3);
 }
 .a__team:after {
   content: "";
@@ -542,6 +544,103 @@ template {
 }
 .name__team span {
   font-size: 1.2rem;
+}
+
+.question {
+  margin: 3rem 0;
+  padding: 4rem 0;
+}
+
+.container__question {
+  flex-direction: column;
+  align-items: center;
+}
+
+.h__question {
+  margin: 0;
+}
+
+.sub__question {
+  font-size: 1.6rem;
+  color: rgba(240, 248, 255, 0.8);
+  max-width: 50rem;
+  text-align: center;
+}
+
+.ul__question {
+  padding: 0;
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.li__question {
+  height: 8rem;
+  width: 90%;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0e0f2d;
+  border: 0.1rem solid rgb(36, 36, 59);
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.topik__question {
+  min-height: 8rem;
+  margin: 0;
+  pointer-events: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */ /* IE10+/Edge */
+  user-select: none; /* Стандартное значение */
+}
+.topik__question span {
+  font-weight: 300;
+  font-size: 3rem;
+  transform: rotate(90deg);
+  transition: 0.2s;
+}
+
+.answer____question {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 300px) {
+  .topik__question {
+    min-height: 6rem;
+  }
+  .li__question {
+    height: 6rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .topik__question {
+    min-height: 4rem;
+  }
+  .li__question {
+    height: 4rem;
+  }
+}
+.li__question--act {
+  height: 100%;
+}
+.li__question--act span {
+  color: rgb(255, 81, 0);
+  transform: rotate(-90deg);
 }
 
 html {
